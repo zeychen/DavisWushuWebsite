@@ -1,6 +1,6 @@
 <h1>Davis Wushu Website</h1>
 
-Purpose: Webpage designed to promote Davis Wushu.
+<h4>Purpose:</h4> Webpage designed to promote Davis Wushu.
 
 Pages:
 <ol>
