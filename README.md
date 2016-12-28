@@ -1,8 +1,6 @@
 <h1>Davis Wushu Website</h1>
-
 <h4>Purpose:</h4> Webpage designed to promote Davis Wushu.
-
-Pages:
+<h4>Pages:</h4>
 <ol>
   <li>Home >>> About Wushu and About Davis Wushu.</li>
   <li>Events >>> Showcase future and past events Davis Wushu hosted or participated in.</li>
