@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- CISW 304 CSS :: Final Project :: Zeyuan C.
+
+Notes:
+1. inline style at footer
+2. embed style in this page
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Find out where Davis Wushu holds practices or how to contact Davis Wushu." />
+		<meta name="keywords" content="Davis, Wushu, Location, , Practice, Contact" />
+		<title>Davis Wushu Home Page</title>
+		<link rel="stylesheet" href="../global/style.css" /> <!-- global css -->
+		<link rel="stylesheet" href="style/style.css" /> <!-- contact us page css -->
+		<link href="https://fonts.googleapis.com/css?family=Muli: 400, 700" rel="stylesheet" />
+		<script type="text/javascript" src="https://use.fontawesome.com/574cbf8790.js"></script>
+
+		<!-- Embedded Style -->
+		<style type="text/stylesheet">
+			/********** Map ***********/
+			.flex-container {
+				align-items: center;
+				justify-content: center;
+			}
+
+			.flex-item {
+				margin-left: 5vw;
+				margin-right: 5vw;
+			}
+
+			h1.subtitle {
+				font-size: 45px;
+			}
+
+			#time p {
+				font-size: 20px;
+			}
+
+/*			.card-subtitle {
+				font-size: 20px;
+				margin-bottom: 30px;
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<!-- header navigation bar -->
+		<div class="full">
+			<div class="navbar" style="font-size: 20px;">
+				<ul>
+					<li class="inactive">
+						<a class="underline white" href="../home/home.html">
+							<i class="fa fa-home"></i>
+							<span class="nav-name"> Home</span>
+						</a>
+					</li>
+					<li class="inactive">
+						<a class="underline white" href="../events/events.html">
+							<i class="fa fa-calendar-o mobile-nav"></i>
+							<span class="nav-name"> Events</span>
+						</a>
+					</li>
+					<li class="inactive">
+						<a class="underline white" href="../officers/officers.html">
+							<i class="fa fa-heart"></i>
+							<span class="nav-name"> Officers</span>
+						</a>
+					</li>
+					<li class="active">
+						<a class="underline white" href="../contact/contact.html">
+							<i class="fa fa-map-marker"></i>
+							<span class="nav-name"> Contact Us</span>
+						</a>
+					</li>
+					<li class="navbar-marker">
+						<span class="marker"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="header-title">
+				<h1 class="title">Contact Us</h1>
+				<p id="contact-phrase" class="phrase"></p>
+				<div class="buttons">
+					<a class="button white" id="facebook" href="https://www.facebook.com/DavisWushu/" target="_blank">Facebook</a>
+				</div>
+				<div class="buttons">
+					<a class="button white" id="instagram" href="https://www.instagram.com/daviswushu/" target="_blank">Instagram</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- main content -->
+		<div class="main-content">
+			<div id="practice" class="content flex-container">
+				<div class="flex-item" id="map">
+					<img src="img/location.png" alt="Google Map Location of Pavilion at UC Davis"/>
+				</div>
+				<div class="flex-item" id="time">
+					<h1 class="white subtitle">Weekly Practices Held On</h1>
+					<p class="white full-width">Mondays and Wednesdays</p>
+					<p class="white full-width">6PM to 8PM</p>
+					<p class="white full-width">UC Davis Pavilion</p>
+					<p class="white full-width">Northeast Corner</p>
+				</div>
+			</div>
+			<div id="contact-info" class="content">
+			<div class="card">
+				<p class="card-subtitle">Please send all inquiries, bookings, and fan mails to:</p>
+				<p>daviswushu@gmail.com</p>
+				<p class="card-subtitle">You can also find us on:</p>
+				<p>Facebook | Davis Wushu</p>
+				<p>Instagram | @daviswushu</p>
+			</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="footer-content">
+				<div class="left">
+					<p style="margin:0px;">Pavilion: M, W 6PM-8PM</p>
+					<p style="margin:0px; font-size: 14px;">Created: December 05, 2016</p>
+				</div>
+				<div class="right">
+					<p style="margin:0px;">daviswushu@gmail.com</p>
+					<p style="margin:0px; font-size: 14px;">Last Modified: December 05, 2016</p>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery to help with animations -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- typewriter animations -->
+		<script type="text/javascript" src="../global/js/typewriter/typed.js"></script>
+		<script type="text/javascript" src="../global/js/typewriter.js"></script>
+	</body>
+</html>
+
+
+
+

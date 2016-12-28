@@ -1,0 +1,180 @@
+/********** General ***********/
+html, body, ul {
+	width: 100vw;
+	margin: 0px;
+	font-family: 'Open Sans',sans-serif,verdana;
+	text-align: center;
+	color: #bbb;
+}
+
+body {
+	background: #eee;
+}
+
+a {
+	text-decoration: none;
+	padding: 12px;
+	color: #fff;
+}
+
+.left {
+	float: left;
+	text-align: left;
+}
+
+.right {
+	float: right;
+	text-align: right;
+}
+
+/********** Navigation ***********/
+.full {
+	background-size: cover;
+	height: 100vh;
+	max-height: 800px;
+}
+
+.navbar {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.navbar ul {
+	list-style: none;
+	padding: 0px;
+	padding-top: 30px;
+	width: 538px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar ul li {
+	display: inline;
+	/*font-weight: bold;*/
+	width: 25%;
+	/*float: left;*/
+	padding: 7px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.navbar ul li a {
+	display: inline-block;
+	min-width: 105px;
+}
+
+span {
+	align: center;
+	position: absolute;
+	display: block;
+	width: 25%;
+	height: 7px;
+	background: #00b6ff;
+}
+
+ul li, span {
+	position: relative;
+	-webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+	     -o-transition: all 0.2s ease;
+			transition: all 0.2s ease;
+
+}
+
+ul li.active:nth-child(1) ~ span,
+ul li.inactive:nth-child(1):hover ~ span {
+	left: 0%;
+}
+
+ul li.active:nth-child(2) ~ span,
+ul li.inactive:nth-child(2):hover ~ span {
+	left: 25%;
+}
+
+ul li.active:nth-child(3) ~ span,
+ul li.inactive:nth-child(3):hover ~ span {
+	left: 50%;
+}
+
+ul li.active:nth-child(4) ~ span,
+ul li.inactive:nth-child(4):hover ~ span {
+	left: 75%;
+}
+
+
+/********** Header ***********/
+.title {
+	margin-top: 25vh;
+	margin-bottom: 0px;
+	font-size: 75px;
+	color: #fff;
+}
+
+.phrase {
+	height: 33px;
+	font-size: 24px;
+	margin-top: 0px;
+}
+
+.buttons {
+	margin-top: 120px;
+}
+
+.button {
+	border: 1px solid #bbb;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background: 
+		linear-gradient(
+			to right,
+			#400080 50%,
+			transparent 50%);
+	background: 
+	    -webkit-linear-gradient(
+	    	left, 
+	    	#2c4994 50%,
+
+			transparent 50%);	/* For Safari 5.1 to 6.0 */
+	background: 
+	    -o-linear-gradient(
+	    	left, 
+	    	#400080 50%,
+			transparent 50%);	/* For Opera 11.1 to 12.0 */
+    background: 
+    	-moz-linear-gradient(
+    		left, 
+	    	#400080 50%,
+			transparent 50%); /* For Firefox 3.6 to 15 */
+	background-size: 200% 100%;
+	background-position: right top;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease; /* Safari */
+}
+
+.button:hover {
+	background-position:left top;
+}
+
+.typed-cursor {
+	display: none;
+}
+/*********** Content ***********/
+.content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article {
+	text-align: justify;
+}
+/*********** Footer ***********/
+.footer {
+	min-height: 50px;
+	background-color: #002758;
+	padding: 20px;
+}

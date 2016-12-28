@@ -1,0 +1,65 @@
+@font-face {
+    font-family: oldenburg;
+    src: url(fonts/Oldenburg/Oldenburg-Regular.ttf);
+}
+
+/********** Header ***********/
+/* background with opaque overlay */
+.full {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.7),
+			rgba(0, 39, 88, 0.7)), 
+		url("../img/background.png");
+	background-size: cover, 200px;
+	background-position: center;
+	background-attachment: scroll, fixed;
+}
+
+/********** Main Content General ***********/
+.article {
+	text-align: left;
+	color: rgba(0, 39, 88, 0.8);
+	font-size: 20px;
+	line-height: 130%;
+}
+
+/* columns = 3 */
+.about {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+	column-count: 3;
+	-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+}
+
+/* drop cap effect */
+.article::first-letter {
+	font-family: oldenburg;
+	float: left; 
+	font-size: 75px;
+	line-height: 60px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+}
+
+/* responsive */
+@media screen and (max-width: 440px) {
+	.about {
+		/* column = 1 */
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	    -moz-column-count: 1; /* Firefox */
+		column-count: 1;
+		-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+	    -moz-column-gap: 40px; /* Firefox */
+	    column-gap: 40px;
+	    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+	    -moz-column-rule-style: solid; /* Firefox */
+	    column-rule-style: solid;
+	}
+}

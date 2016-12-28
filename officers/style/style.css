@@ -1,0 +1,640 @@
+/********* Header ***********/
+.full {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.7),
+			rgba(0, 39, 88, 0.7)), 
+		url("../img/header.jpg");
+	background: 
+		-webkit-linear-gradient(
+			rgba(0, 39, 88, 0.7),
+			rgba(0, 39, 88, 0.7)), 
+		url("../img/header.jpg");
+	background: 
+		-moz-linear-gradient(
+			rgba(0, 39, 88, 0.7),
+			rgba(0, 39, 88, 0.7)), 
+		url("../img/header.jpg");
+	background: 
+		-o-linear-gradient(
+			rgba(0, 39, 88, 0.7),
+			rgba(0, 39, 88, 0.7)), 
+		url("../img/header.jpg");
+	-webkit-background-size: cover;	
+	   -moz-background-size: cover;	
+		 -o-background-size: cover;	
+			background-size: cover;
+	background-attachment: scroll, fixed;
+}
+
+/********** Main Content General ***********/
+.box {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	padding: 0px;
+}
+
+/********** Officers ***********/
+.officer-card {
+	width: 300px;
+	height: 300px;
+	padding: 0px;
+	margin: 20px;
+	border-radius: 50%;
+	font-family: 'Muli';
+}
+
+.officer-card:nth-child(1) {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.8),
+			rgba(0, 39, 88, 0.8)), 
+		url("../img/pig.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.officer-card:nth-child(1):hover {
+	animation: reveal-1 0s 0s ease both;
+}
+
+.officer-card:nth-child(2) {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.8),
+			rgba(0, 39, 88, 0.8)), 
+		url("../img/rat.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.officer-card:nth-child(2):hover {
+	animation: reveal-2 0s 0s ease both;
+}
+
+.officer-card:nth-child(3) {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.8),
+			rgba(0, 39, 88, 0.8)), 
+		url("../img/rabbit.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.officer-card:nth-child(3):hover {
+	animation: reveal-3 0s 0s ease both;
+}
+
+.officer-card:nth-child(4) {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.8),
+			rgba(0, 39, 88, 0.8)), 
+		url("../img/tiger.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.officer-card:nth-child(4):hover {
+	animation: reveal-4 0s 0s ease both;
+}
+
+.officer-card:nth-child(5) {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.8),
+			rgba(0, 39, 88, 0.8)), 
+		url("../img/snake.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.officer-card:nth-child(5):hover {
+	animation: reveal-5 0s 0s ease both;
+}
+
+.officer-card:nth-child(6) {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.8),
+			rgba(0, 39, 88, 0.8)), 
+		url("../img/rooster.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.officer-card:nth-child(6):hover {
+	animation: reveal-6 0s 0s ease both;
+}
+
+.officer-card:nth-child(7) {
+	background: 
+		linear-gradient(
+			rgba(0, 39, 88, 0.8),
+			rgba(0, 39, 88, 0.8)), 
+		url("../img/horse.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.officer-card:nth-child(7):hover {
+	animation: reveal-7 0s 0s ease both;
+}
+
+.position {
+	font-size: 30px;
+	bottom: 0px;
+	transform: translateY(40px);
+}
+
+.light {
+	transform: translateY(-85px);
+	opacity: 0.7;
+	font-size: 24px;
+}
+
+.position-name {
+	margin: 0px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 30px;
+	top: 0px;
+}
+
+.quote,
+.author {
+	color: transparent;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quote {
+	text-align: left;
+}
+
+.author {
+	text-align: right;
+}
+
+.officer-card:hover {
+	transform: scale(1.5);
+}
+
+.officer-card:hover .position-name,
+.officer-card:hover .position {
+	color: transparent;
+}
+
+.officer-card:hover .revealed {
+	background: rgba(0, 39, 88, 0.9);
+}
+
+
+.officer-card:hover .quote,
+.officer-card:hover .author  {
+	animation: clear-turn-white 1s 0s ease both;
+	transform:translateY(-80px);
+}
+
+/********** Alumni Officers **********/
+.alumni-container {
+	padding-left: 5vw;
+	padding-right: 5vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.group {
+	cursor: default;
+	min-width: 300px;
+	border-radius: 3px;
+	box-shadow:2px 4px 0px #888;
+	background: rgba(255, 255, 255, 1);
+	user-select:none;
+	margin: 20px 0px 0px 0px;
+	padding: 20px;
+	padding-bottom: 40px;
+	animation:fly-in-from-left .5s 2s ease both;
+}
+
+.year.subtitle {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+
+/********** Responsive **********/
+@media screen and (max-width: 440px) {
+	.officer-card {
+		width: 200px;
+		height: 200px;
+	}
+
+	.officer-card .position {
+		transform:translateY(20px);
+	}
+
+	.position {
+		font-size: 18px;
+	}
+
+	.position.light {
+		transform:translateY(-260px);
+	}
+
+	.quote,
+	.author {
+		display: none;
+	}
+}
+
+
+/********** Animation **********/
+/********** Reveal 1 Animation **********/
+@-webkit-keyframes reveal-1 {
+  	to {
+		background: 
+			-webkit-linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/pig.jpg");
+		-webkit-background-size: contain;
+				background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-moz-keyframes reveal-1 {
+  	to {
+  		background: 
+  			-moz-linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/pig.jpg");
+		-moz-background-size: contain;
+			 background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-o-keyframes reveal-1 {
+  	to {
+  		background: 
+  			-o-linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/pig.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@keyframes reveal-1 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/pig.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+/********** Reveal 2 Animation **********/
+@-webkit-keyframes reveal-2 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rat.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-moz-keyframes reveal-2 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rat.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-o-keyframes reveal-2 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rat.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@keyframes reveal-2 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rat.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+/********** Reveal 3 Animation **********/
+@-webkit-keyframes reveal-3 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rabbit.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-moz-keyframes reveal-3 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rabbit.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-o-keyframes reveal-3 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rabbit.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@keyframes reveal-3 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rabbit.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+/********** Reveal 4 Animation **********/
+@-webkit-keyframes reveal-4 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/tiger.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-moz-keyframes reveal-4 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/tiger.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+  	}
+}
+
+@-o-keyframes reveal-4 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/tiger.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@keyframes reveal-4 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/tiger.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+/********** Reveal 5 Animation **********/
+@-webkit-keyframes reveal-5 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/snake.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-moz-keyframes reveal-5 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/snake.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-o-keyframes reveal-5 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/snake.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@keyframes reveal-5 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/snake.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+/********** Reveal 6 Animation **********/
+@-webkit-keyframes reveal-6 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rooster.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-moz-keyframes reveal-6 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rooster.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-o-keyframes reveal-6 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rooster.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@keyframes reveal-6 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/rooster.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+/********** Reveal 7 Animation **********/
+@-webkit-keyframes reveal-7 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/horse.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-moz-keyframes reveal-7 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/horse.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@-o-keyframes reveal-7 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/horse.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}
+
+@keyframes reveal-7 {
+  	to {
+  		background: 
+  			linear-gradient(
+				rgba(0, 39, 88, 0.4),
+				rgba(0, 39, 88, 0.4)), 
+			url("../img/horse.jpg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+  	}
+}

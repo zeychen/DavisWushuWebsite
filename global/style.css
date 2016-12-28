@@ -1,0 +1,445 @@
+/* This page contains CSS that every webpage uses */
+@font-face {
+    font-family: josans;
+    src: url(fonts/Josefin_Sans/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+/********** General ***********/
+html, body, ul {
+	margin: 0px;
+	font-family: 'Muli',sans-serif,verdana;
+	text-align: center;
+	color: #bbb;
+	list-style: none;
+}
+
+html, body {
+	width: 100%;
+	font-size: 18px;
+}
+
+body {
+	background: #fff;
+}
+
+a {
+	text-decoration: none;		/* decorative properties */
+	padding: 12px;
+	cursor: pointer;
+}
+
+/* text-color white */
+.white {
+	color: #fff;
+}
+
+.left {
+	float: left;
+	text-align: left;
+}
+
+.right {
+	float: right;
+	text-align: right;
+}
+
+.inline-display {
+	display: inline-block;
+}
+
+/* creates flex containers */
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/********** Navigation ***********/
+.full {
+	background-size: cover;
+	height: 100vh;
+	max-height: 800px;
+	min-height: 600px;
+}
+
+.navbar {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.navbar ul {
+	list-style: none;
+	padding: 0px;
+	padding-top: 30px;
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar ul li {
+	display: inline;
+	width: 150px;
+	padding: 7px 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.navbar ul li a {
+	display: inline-block;
+	min-width: 150px;
+}
+
+.nav-name {
+	font-family: opensans;
+}
+
+/********** Navigatio Location Indicator *********/
+.marker {
+	align: center;
+	position: absolute;
+	display: block;
+	width: 25%;
+	height: 7px;
+	background: #00b6ff;
+}
+
+.navbar-marker {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* animate marker */
+ul li, .marker {
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	   -moz-transition: all 0.4s ease;
+	     -o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+
+}
+
+/* moves marker a certain amount on hover and when it is labeled active*/
+ul li.active:nth-child(1) ~ li.navbar-marker,
+ul li.inactive:nth-child(1):hover ~ li.navbar-marker {
+	left: 0%;
+}
+
+ul li.active:nth-child(2) ~ li.navbar-marker,
+ul li.inactive:nth-child(2):hover ~ li.navbar-marker {
+	left: 25%;
+}
+
+ul li.active:nth-child(3) ~ li.navbar-marker,
+ul li.inactive:nth-child(3):hover ~ li.navbar-marker {
+	left: 50%;
+}
+
+ul li.active:nth-child(4) ~ li.navbar-marker,
+ul li.inactive:nth-child(4):hover ~ li.navbar-marker {
+	left: 75%;
+}
+
+/********** Header ***********/
+.title {
+	margin-top: 25vh;
+	margin-bottom: 0px;
+	font-size: 75px;
+	color: #fff;
+	font-family: josans;
+}
+
+.phrase {
+	height: 33px;
+	font-size: 24px;
+	margin-top: 0px;
+	margin-bottom: 100px;
+}
+
+/********** Social Media Buttons ***********/
+/* button fills blue from left right when hover */
+.buttons {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+
+.button {
+	border: 2px solid #bbb;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background: 
+		linear-gradient(
+			to right,
+			rgba(0, 147, 208, 1) 50%,
+			transparent 50%);
+	background: 
+	    -webkit-linear-gradient(
+	    	left, 
+	    	rgba(0, 147, 208, 1) 50%,
+			transparent 50%);	/* For Safari 5.1 to 6.0 */
+	background: 
+	    -o-linear-gradient(
+	    	left, 
+	    	rgba(0, 147, 208, 1) 50%,
+			transparent 50%);	/* For Opera 11.1 to 12.0 */
+    background: 
+    	-moz-linear-gradient(
+    		left, 
+	    	rgba(0, 147, 208, 1) 50%,
+			transparent 50%); /* For Firefox 3.6 to 15 */
+	background-size: 200% 100%;
+	background-position: right top;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease; /* Safari */
+}
+
+.button:hover {
+	background-position:left top;
+}
+
+.button:active {
+	font-style: italic;
+}
+
+.typed-cursor {
+	display: none;
+}
+
+/*********** Content ***********/
+.main-content {
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.subtitle {
+	font-size: 45px;
+	margin-bottom: 10vh;
+}
+
+/* makes every odd subtitle pop out using text shadow */
+.content:nth-child(odd) .subtitle {
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 2px 3px rgba(0, 147, 208, 1);
+}
+
+/* makes every even subtitle letterpress */
+.content:nth-child(even) .subtitle {
+	background-color: rgba(50, 50, 50, 1);
+	color: transparent;
+	text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+	-webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.content {
+	padding-bottom: 10vh;
+	padding-top: 10vh;
+}
+
+/* change color for every other content background */
+.content:nth-child(odd) {
+	background-color: rgba(0, 147, 208, 0.8);
+}
+
+.content:nth-child(even) {
+	background-color: rgba(0, 147, 208, 0.2);
+}
+
+/* gives class with this attribute feeling of a card */
+/* example - future and past events in events.html */
+.card {
+	padding: 50px;
+	border-radius: 3px;
+	box-shadow: 0px 2px 0px #aaa;
+	background: rgba(255, 255, 255, 1);
+	user-select: none;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*********** Footer ***********/
+.footer {
+	min-height: 50px;
+	background-color: rgba(0, 147, 208, 1);
+	padding: 20px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer-content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/********** Responsive Design **********/
+/* changes position of items to fit into mobile and tablet screen to cause no horizontal scrolling */
+@media screen and (max-width: 870px) {
+	.flex-item {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.future-events-card .event-info {
+		width: 250px;
+	}
+
+	.full-width {
+		width: 100%;
+	}
+
+	.nav-name {
+		display: none;
+	}
+
+	.navbar ul {
+		width: 80%;
+	}
+
+	.navbar ul li,
+	.navbar ul li a {
+		min-width: 20%;
+	}
+
+
+}
+
+@media screen and (max-width: 720px) {
+	.flex-item {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.future-events-card .event-info {
+		width: 250px;
+	}
+
+	.navbar ul li,
+	.navbar ul li a {
+		min-width: 18%;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.navbar ul {
+		width: 100%;
+	}
+
+	.navbar ul li,
+	.navbar ul li a {
+		min-width: 18%;
+	}
+
+	.navbar {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.title {
+		margin-top: 15vh;
+	}
+
+	.phrase {
+		margin-bottom: 15vh;
+	}
+
+	.buttons {
+		margin-bottom: 20px;
+	}
+
+	.footer {
+		min-height: 120px;
+	}
+
+	.footer-content div {
+		margin-top: 10px;
+	}
+
+	.right {
+		float: left;
+		text-align: left;
+	}
+
+	.navbar ul li,
+	.navbar ul li a {
+		min-width: 16%;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	
+
+	.navbar ul li,
+	.navbar ul li a {
+		min-width: 15%;
+	}
+}
+
+/********** Clear Turn White Animation **********/
+@-webkit-keyframes clear-turn-white {
+	from {
+		color: transparent;
+	}
+  	to {
+  		color: #fff;
+  	}
+}
+
+@-moz-keyframes clear-turn-white {
+  	from {
+		color: transparent;
+	}
+  	to {
+  		color: #fff;
+  	}
+}
+
+@-o-keyframes clear-turn-white {
+	from {
+		color: transparent;
+	}
+  	to {
+  		color: #fff;
+  	}
+}
+
+@keyframes clear-turn-white {
+	from {
+		color: transparent;
+	}
+  	to {
+  		color: #fff;
+  	}
+}
+
+/********** Fly In Animation ***********/
+@keyframes fly-in-from-left {
+  from {
+    transform:translateY(25rem) rotate(15deg);
+    opacity:0;		/* opacity properties */
+  }
+}
+
+@keyframes fly-in-from-right {
+  from {
+    transform:translateY(15rem) rotate(-15deg);
+    opacity:0;
+  }
+}
+
